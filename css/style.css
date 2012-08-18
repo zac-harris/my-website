@@ -1,9 +1,15 @@
+img {
+	max-width: 100%;
+}
+
 body {
+	font: 100%/1.5;
 	font-family: 'Source Sans Pro', sans-serif;
 	background-image: url('../images/monkey_bg.png');
 }
 
 h1 {
+	font-size: 1.5em;
 	font-family: 'The Girl Next Door', cursive;
 	color: white;
 	text-shadow: black 0.1em 0.1em 0.2em;
@@ -16,8 +22,8 @@ h1 {
 	padding: 0;
 	list-style: none;
 	background-color: #f2f2f2;
-	border-bottom: 1px solid #ccc;
-	border-top: 1px solid #ccc;
+	border-bottom: 6.6% solid #ccc;
+	border-top: 6.3% solid #ccc;
 }
 
 #nav li {
@@ -26,11 +32,11 @@ h1 {
 
 #nav li a {
 	display: block;
-	padding: 8px 15px;
+	padding: 20% 8%;
 	text-decoration: none;
 	font-weight: bold;
 	color: #069;
-	border-right: 1px solid #ccc;
+	border-right: 0.063em solid #ccc;
 }
 
 #nav li a hover {
@@ -39,20 +45,20 @@ h1 {
 }
 
 div.transbox {
-	width: 800px;
-	height: 500px;
-	margin: 60px 50px;
+	width: 88.888889%;
+	height: 55.555556%;
+	margin: 7.5% 6.25%;
 	background-color: #ffffff;
 	border: 1px solid black;
 	opacity: 0.6;
 }
 
 div.transbox h2 {
-	margin:30px 40px;
+	margin: 1.875em 2.500em;
 }
 
 div.transbox p {
-	margin: 30px 40px;
+	margin: 3.75% 5%;
 	font-weight: bold;
 	color: #000000;
 }
@@ -105,13 +111,13 @@ div#buttoncenter {
 }
 
 #gallery {
-	border: 10px solid #1D0C16;
-	height: 300px;
-	width: 800px;
+	border: 1.25% solid #1D0C16;
+	height: 33.333333%;
+	width: 88.888889%;
 	margin-left: auto;
 	margin-right: auto;
-	margin-top: 30px;
-	margin-bottom: 30px;
+	margin-top: 3.75%;
+	margin-bottom: 3.75%;
 	overflow: visible;
 	background: #272229;
 	-moz-box-shadow: #272229 10px 10px 20px;
@@ -147,8 +153,8 @@ div#buttoncenter {
 }
 
 #gallery ul li:hover .pic {
-	width: 200px;
-	height: 200px;
+	width: 0.25em;
+	height: 0.35em;
 	opacity: 1;
 	visibility: visible;
 	float: right;
@@ -169,4 +175,30 @@ div#buttoncenter {
 #thirdparagraph {
 	width: 30%;
 	float: left;
+}
+
+@media all and (max-width: 900px) {
+#nav {
+	border: 1px solid #131e31;
+	position: absolute;
+	top: 75px;
+	left: 10px;
+	height: auto;
+}
+
+@media screen and (max-width: 480px) {
+footer {
+	display: none;
+
+body {
+	border: 1px solid #131e31;
+}
+
+@media screen and (max-width: 1200px) {
+body {
+	width: 1000px;
+	margin: 0 auto;
+
+footer {
+	max-width: 1200px;
 }
