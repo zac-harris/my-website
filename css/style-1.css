@@ -1,0 +1,245 @@
+img {
+	max-width : 100%;
+}
+
+body {
+	font : 100%/1.5;
+	font-family : 'Source Sans Pro',sans-serif;
+	background-image : url('../images/monkey_bg.png');
+}
+
+h1 {
+	font-size : 1.5em;
+	font-family : 'The Girl Next Door',cursive;
+	color : white;
+	text-shadow : black 0.1em 0.1em 0.2em;
+}
+
+#nav {
+	width : 100%;
+	float : left;
+	padding : 0;
+	list-style : none;
+	background-color : #f2f2f2;
+}
+
+#nav li {
+	float : left;
+}
+
+#nav li a {
+	display : block;
+	padding : 20% 8%;
+	text-decoration : none;
+	font-weight : bold;
+	color : #069;
+	border-right : 0.063em solid #ccc;
+}
+
+#nav li a hover {
+	color : #c00;
+	background-color : #fff;
+}
+
+div.transbox {
+	width : 88.888889%;
+	height : 55.555556%;
+	margin : 7.5% 6.25%;
+	background-color : #ffffff;
+	border : black solid 1px;
+	opacity : 0.60000002384185791015625;
+}
+
+div.transbox h2 {
+	margin : 1.875em 2.500em;
+}
+
+div.transbox p {
+	margin : 3.75% 5%;
+	font-weight : bold;
+	color : #000000;
+}
+
+.button {
+	display : inline-block;
+	outline : none;
+	cursor : pointer;
+	text-align : center;
+	text-decoration : none;
+	font : 14px/100% Arial,sans-serif;
+	padding : 0.5em 2em 0.55em;
+	border-radius : 0.5em;
+	box-shadow : 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.button:hover {
+	text-decoration : none;
+}
+
+.button:active {
+	position : relative;
+	top : 1px;
+}
+
+.blue {
+	color : #d9eef7;
+	border : #0076a3 solid 1px;
+	background : #0095cd;
+}
+
+.blue:hover {
+	background : #007ead;
+}
+
+.blue:active {
+	color : #80bed6;
+}
+
+div#buttoncenter {
+	clear : both;
+	text-align : center;
+}
+
+#gallery {
+	height : 33.333333%;
+	width : 88.888889%;
+	margin-left : auto;
+	margin-right : auto;
+	margin-top : 3.75%;
+	margin-bottom : 3.75%;
+	overflow : visible;
+	background : #272229;
+}
+
+#gallery ul {
+	margin-left : -30px;
+}
+
+#gallery ul li {
+	list-style : none;
+	display : inline-table;
+	padding : 10px;
+}
+
+#gallery ul li .pic {
+	opacity : 0;
+	visibility : hidden;
+	position : absolute;
+	margin-top : 10px;
+	margin-left : -20px;
+	border : black solid 1px;
+	box-shadow : 2px 2px 10px #272229;
+}
+
+#gallery ul li .mini:hover {
+	cursor : pointer;
+}
+
+#gallery ul li:hover .pic {
+	width : 0.25em;
+	height : 0.35em;
+	opacity : 1;
+	visibility : visible;
+	float : right;
+}
+
+#firstparagraph {
+	width : 30%;
+	float : left;
+	padding : 1%;
+}
+
+#secondparagraph {
+	width : 30%;
+	float : left;
+	padding : 1%;
+}
+
+#thirdparagraph {
+	width : 30%;
+	float : left;
+}
+
+p, h1, form, button {
+	border : 0;
+	margin : 0;
+	padding : 0;
+}
+
+.spacer {
+	clear : both;
+	height : 1px;
+}
+
+#harrisform {
+	border : #b7ddf2 solid 2px;
+	background : #ebf4bf;
+}
+
+#harrisform h1 {
+	font-size : 14px;
+	font-weight : bold;
+	margin-bottom : 8px;
+}
+
+#harrisform p {
+	font-size : 11px;
+	color : #666666;
+	margin-bottom : 20px;
+	border-bottom : 1px solid #b7ddf2;
+	padding-bottom : 10px;
+}
+
+#harrisform label {
+	display : block;
+	font-weight : bold;
+	text-align : right;
+	width : 140px;
+	float : left;
+}
+
+#harrisform .small {
+	color : #666666;
+	display : block;
+	font-size : 11px;
+	font-weight : normal;
+	text-align : right;
+	width : 140px;
+}
+#harrisform input {
+	float : left;
+	font-size : 12px;
+	padding : 4px 2px;
+	border : #aacfe4 solid 1px;
+	width : 200px;
+	margin : 2px 0 20px 10px;
+}
+
+#harrisform button {
+	clear : both;
+	margin-left : 150px;
+	width : 125px;
+	height : 31px;
+	background : #666666;
+	text-align : center;
+	line-height : 31px;
+	color : #ffffff;
+	font-size : 11px;
+	font-weight : bold;
+}
+
+@media all and (max-width:900px) {
+	#nav {
+		border : #131e31 solid 1px;
+		position : absolute;
+		top : 75px;
+		left : 10px;
+		height : auto;
+}
+	img {
+		display: none;	
+}
+	#column {
+		display: collapse;
+	}
+}
